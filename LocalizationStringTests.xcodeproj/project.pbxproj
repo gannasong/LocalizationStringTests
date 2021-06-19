@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		49066A05267E3739000A80C5 /* LocalizationStringTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490669FB267E3739000A80C5 /* LocalizationStringTests.framework */; };
 		49066A0A267E3739000A80C5 /* LocalizationStringTestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49066A09267E3739000A80C5 /* LocalizationStringTestsTests.swift */; };
-		49066A0C267E3739000A80C5 /* LocalizationStringTests.h in Headers */ = {isa = PBXBuildFile; fileRef = 490669FE267E3739000A80C5 /* LocalizationStringTests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49066A16267E3776000A80C5 /* FakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49066A15267E3776000A80C5 /* FakeViewController.swift */; };
+		49066A19267E37A9000A80C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49066A1B267E37A9000A80C5 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +25,13 @@
 
 /* Begin PBXFileReference section */
 		490669FB267E3739000A80C5 /* LocalizationStringTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalizationStringTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		490669FE267E3739000A80C5 /* LocalizationStringTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalizationStringTests.h; sourceTree = "<group>"; };
 		490669FF267E3739000A80C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49066A04267E3739000A80C5 /* LocalizationStringTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizationStringTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49066A09267E3739000A80C5 /* LocalizationStringTestsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationStringTestsTests.swift; sourceTree = "<group>"; };
 		49066A0B267E3739000A80C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49066A15267E3776000A80C5 /* FakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeViewController.swift; sourceTree = "<group>"; };
+		49066A1A267E37A9000A80C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		49066A1C267E37AD000A80C5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +74,9 @@
 		490669FD267E3739000A80C5 /* LocalizationStringTests */ = {
 			isa = PBXGroup;
 			children = (
-				490669FE267E3739000A80C5 /* LocalizationStringTests.h */,
 				490669FF267E3739000A80C5 /* Info.plist */,
+				49066A15267E3776000A80C5 /* FakeViewController.swift */,
+				49066A1B267E37A9000A80C5 /* Localizable.strings */,
 			);
 			path = LocalizationStringTests;
 			sourceTree = "<group>";
@@ -93,7 +97,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49066A0C267E3739000A80C5 /* LocalizationStringTests.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					490669FA267E3739000A80C5 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					49066A03267E3739000A80C5 = {
 						CreatedOnToolsVersion = 12.5;
@@ -160,6 +164,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 490669F1267E3739000A80C5;
 			productRefGroup = 490669FC267E3739000A80C5 /* Products */;
@@ -177,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49066A19267E37A9000A80C5 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49066A16267E3776000A80C5 /* FakeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +221,18 @@
 			targetProxy = 49066A06267E3739000A80C5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49066A1B267E37A9000A80C5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49066A1A267E37A9000A80C5 /* en */,
+				49066A1C267E37AD000A80C5 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		49066A0D267E3739000A80C5 /* Debug */ = {
@@ -340,6 +359,7 @@
 		49066A10267E3739000A80C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -357,6 +377,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lang.lang.LocalizationStringTests;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -364,6 +385,7 @@
 		49066A11267E3739000A80C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -388,6 +410,7 @@
 		49066A13267E3739000A80C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = WCFPRNZ278;
@@ -406,6 +429,7 @@
 		49066A14267E3739000A80C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = WCFPRNZ278;

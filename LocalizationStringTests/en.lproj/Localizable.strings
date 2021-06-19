@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  LocalizationStringTests
+
+  Created by SUNG HAO LIN on 2021/6/19.
+  
+*/
+
+"A" = "你好";
+"B" = "你好B";
+"C" = "你好C";
+"D" = "你好D";
+"E" = "你好";
+"F" = "F";
+"G" = "G";
+"H" = "H";
